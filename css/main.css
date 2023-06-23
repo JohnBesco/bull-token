@@ -533,7 +533,7 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(-135deg, #c850c0, #4158d8);
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
   -webkit-clip-path: circle(25px at calc(100% - 45px) 45px);
           clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
@@ -557,7 +557,17 @@ video {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  background: linear-gradient(-135deg, #c850c0, #4158d8);
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  transition:  all 0.3s ease;
+}
+
+#active:checked ~ .menu-btn {
+  background: #fff;
+  color: #4158d8;
+}
+
+#active:checked ~ .menu-btn i:before {
+  content: "\f00d";
 }
 
 .wrapper ul {
@@ -574,6 +584,7 @@ video {
 }
 
 .wrapper ul li a {
+  color: none;
   color: #ffff;
   text-decoration: none;
   font-size: 35px;
@@ -602,5 +613,9 @@ video {
 }
 
 .wrapper ul li a:hover {
-  color: #c850c0;
+  color: #4158d8;
+}
+
+input[type="checkbox"] {
+  display: none;
 }
