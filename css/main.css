@@ -526,3 +526,38 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(2 39 27 / var(--tw-bg-opacity));
 }
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-135deg, #c850c0, #4158d8);
+}
+
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.wrapper ul li{
+  margin: 15px 0;
+}
+
+.wrapper ul li a{
+  color: #ffff;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 5px 50px;
+}
+
+.wrapper ul li a:after{
+  content: "";
+  position: absolute;
+}
