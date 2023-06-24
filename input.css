@@ -21,7 +21,6 @@
 
 #active:checked ~ .wrapper {
     clip-path: circle(75%);
-    
 }
 
 .menu-btn{
