@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -556,36 +558,24 @@ video {
   margin: 2.5rem;
 }
 
-.m-12{
-  margin: 3rem;
-}
-
-.m-1{
-  margin: 0.25rem;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
+.ml-8{
+  margin-left: 2rem;
 }
 
 .mt-5{
   margin-top: 1.25rem;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
+.-mt-28{
+  margin-top: -7rem;
 }
 
-.ml-10{
-  margin-left: 2.5rem;
+.mt-28{
+  margin-top: 7rem;
 }
 
-.ml-8{
-  margin-left: 2rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
+.mt-24{
+  margin-top: 6rem;
 }
 
 .flex{
@@ -600,24 +590,28 @@ video {
   height: 3.5rem;
 }
 
-.w-14{
-  width: 3.5rem;
+.w-1\/2{
+  width: 50%;
 }
 
-.w-full{
-  width: 100%;
+.w-14{
+  width: 3.5rem;
 }
 
 .flex-1{
   flex: 1 1 0%;
 }
 
-.items-center{
-  align-items: center;
+.flex-grow{
+  flex-grow: 1;
 }
 
-.justify-center{
-  justify-content: center;
+.flex-grow-0{
+  flex-grow: 0;
+}
+
+.items-center{
+  align-items: center;
 }
 
 .justify-between{
@@ -633,13 +627,22 @@ video {
   background-color: rgb(2 39 27 / var(--tw-bg-opacity));
 }
 
-.py-36{
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .font-mainFont{
   font-family: Alfa Slab One;
+}
+
+.font-textFont{
+  font-family: Gentium Book Plus;
 }
 
 .text-4xl{
@@ -650,6 +653,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-offWhite{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 254 / var(--tw-text-opacity));
 }
 
 .wrapper {
