@@ -182,3 +182,9 @@ input[type="checkbox"] {
     right: 8px;
     z-index: -1;
 }
+
+.gradient-text {
+    background: linear-gradient(90deg, #009245 0%, #19FB9B 33.33%, #00A8C5 66.67%, #73D83F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
