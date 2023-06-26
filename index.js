@@ -27,4 +27,4 @@ function scrollBanner() {
   }
 }
 
-setInterval(scrollBanner, 20); // Adjust the interval time as per your preference
+setInterval(scrollBanner, 30); // Adjust the interval time as per your preference
