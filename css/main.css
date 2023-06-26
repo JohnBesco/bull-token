@@ -554,14 +554,6 @@ video {
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
-.absolute{
-  position: absolute;
-}
-
 .relative{
   position: relative;
 }
@@ -572,10 +564,6 @@ video {
 
 .top-0{
   top: 0px;
-}
-
-.z-50{
-  z-index: 50;
 }
 
 .m-10{
@@ -623,24 +611,12 @@ video {
   height: 3.5rem;
 }
 
-.h-\[110px\]{
-  height: 110px;
-}
-
-.h-\[96px\]{
-  height: 96px;
-}
-
-.h-\[125px\]{
-  height: 125px;
+.h-\[100px\]{
+  height: 100px;
 }
 
 .h-auto{
   height: auto;
-}
-
-.h-\[100px\]{
-  height: 100px;
 }
 
 .w-14{
@@ -651,61 +627,12 @@ video {
   width: 650px;
 }
 
-.w-full{
-  width: 100%;
-}
-
-.w-screen{
-  width: 100vw;
-}
-
-.w-max{
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-\[1000px\]{
-  width: 1000px;
-}
-
-.w-\[5000px\]{
-  width: 5000px;
-}
-
-.w-\[1745px\]{
-  width: 1745px;
-}
-
-.w-\[1845px\]{
-  width: 1845px;
-}
-
-.w-\[1900px\]{
-  width: 1900px;
-}
-
-.w-\[122px\]{
-  width: 122px;
-}
-
-.w-\[125px\]{
-  width: 125px;
-}
-
-.w-\[155px\]{
-  width: 155px;
-}
-
-.w-\[135px\]{
-  width: 135px;
-}
-
-.w-\[145px\]{
-  width: 145px;
-}
-
 .w-auto{
   width: auto;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-xl{
@@ -720,13 +647,13 @@ video {
   flex-shrink: 0;
 }
 
-.-rotate-\[27\.875deg\]{
-  --tw-rotate: -27.875deg;
+.-rotate-\[13\.968deg\]{
+  --tw-rotate: -13.968deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-rotate-\[13\.968deg\]{
-  --tw-rotate: -13.968deg;
+.-rotate-\[27\.875deg\]{
+  --tw-rotate: -27.875deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -769,10 +696,6 @@ video {
   padding: 1rem;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -783,47 +706,13 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-9{
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-72{
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .pt-4{
   padding-top: 1rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -1046,6 +935,13 @@ input[type="checkbox"] {
   background: linear-gradient(90deg, #009245 0%, #19FB9B 33.33%, #00A8C5 66.67%, #73D83F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.glass-effect {
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.11);
+  -webkit-backdrop-filter: blur(14.600000381469727px);
+          backdrop-filter: blur(14.600000381469727px);
 }
 
 @media (min-width: 768px){
