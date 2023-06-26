@@ -611,6 +611,22 @@ video {
   width: 10rem;
 }
 
+.w-96{
+  width: 24rem;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-\[800px\]{
+  width: 800px;
+}
+
+.w-\[700px\]{
+  width: 700px;
+}
+
 .max-w-xl{
   max-width: 36rem;
 }
@@ -693,6 +709,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .leading-relaxed{
@@ -910,6 +931,16 @@ input[type="checkbox"] {
 
   .md\:text-6xl{
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl{
+    font-size: 4.5rem;
     line-height: 1;
   }
 
