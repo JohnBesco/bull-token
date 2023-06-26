@@ -194,3 +194,11 @@ input[type="checkbox"] {
     background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(14.600000381469727px);
 }
+
+.banner {
+    overflow-x: scroll;
+}
+
+.banner::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }

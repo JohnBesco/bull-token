@@ -558,12 +558,8 @@ video {
   position: relative;
 }
 
-.left-0{
-  left: 0px;
-}
-
-.top-0{
-  top: 0px;
+.m-0{
+  margin: 0px;
 }
 
 .m-10{
@@ -611,8 +607,8 @@ video {
   height: 3.5rem;
 }
 
-.h-\[100px\]{
-  height: 100px;
+.h-\[65\.014px\]{
+  height: 65.014px;
 }
 
 .h-auto{
@@ -629,10 +625,6 @@ video {
 
 .w-auto{
   width: auto;
-}
-
-.w-full{
-  width: 100%;
 }
 
 .max-w-xl{
@@ -657,6 +649,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-rotate-\[5deg\]{
+  --tw-rotate: -5deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[1deg\]{
+  --tw-rotate: -1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -671,6 +673,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -944,9 +950,22 @@ input[type="checkbox"] {
           backdrop-filter: blur(14.600000381469727px);
 }
 
+.banner {
+  overflow-x: scroll;
+}
+
+.banner::-webkit-scrollbar {
+  display: none;
+  /* Hide the scrollbar */
+}
+
 @media (min-width: 768px){
   .md\:inline-block{
     display: inline-block;
+  }
+
+  .md\:h-\[100px\]{
+    height: 100px;
   }
 
   .md\:w-1\/2{
