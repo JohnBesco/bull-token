@@ -817,7 +817,7 @@ video {
 
 .wrapper ul li a {
   color: none;
-  color: #ffff;
+  color: #19FB9B;
   text-decoration: none;
   font-size: 30px;
   font-weight: 500;
@@ -848,7 +848,7 @@ video {
 }
 
 .wrapper ul li a:hover {
-  color: #4158d8;
+  color: #278537;
 }
 
 input[type="checkbox"] {
