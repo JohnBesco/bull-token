@@ -795,7 +795,7 @@ video {
 
 #active:checked ~ .menu-btn {
   background: #fff;
-  color: #4158d8;
+  color: #ff0000;
 }
 
 #active:checked ~ .menu-btn i:before {
