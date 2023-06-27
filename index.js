@@ -29,3 +29,9 @@ function scrollBanner() {
 
 setInterval(scrollBanner, 30); // Adjust the interval time as per your preference
 
+const tween = KUTE.fromTo(
+  '#blob1',
+  { path: '#blob1' },
+  { path: '#blob2' },
+  { repeat: 999, duration: 3000, yoyo: true }
+).start();
