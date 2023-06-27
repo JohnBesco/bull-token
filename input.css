@@ -206,7 +206,7 @@ input[type="checkbox"] {
 @media (max-width: 767px) {
     .blob-motion {
         width: 100vw;
-        height: 50vh;
+        height: 45vh;
     }
 
     .blob-motion {
