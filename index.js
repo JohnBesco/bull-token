@@ -28,3 +28,4 @@ function scrollBanner() {
 }
 
 setInterval(scrollBanner, 30); // Adjust the interval time as per your preference
+
