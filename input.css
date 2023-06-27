@@ -202,3 +202,15 @@ input[type="checkbox"] {
 .banner::-webkit-scrollbar {
     display: none; /* Hide the scrollbar */
 }
+
+@media (max-width: 767px) {
+    .blob-motion {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .blob-motion {
+        width: 100%;
+        max-width: 650px;
+    }
+}
