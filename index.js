@@ -34,18 +34,4 @@ const tween = KUTE.fromTo(
   { path: '#blob1' },
   { path: '#blob2' },
   { repeat: 999, duration: 3000, yoyo: true }
-).chain(
-  KUTE.fromTo(
-    '#blob2',
-    { path: '#blob2' },
-    { path: '#blob3' },
-    { repeat: 999, duration: 3000, yoyo: true }
-  )
-).chain(
-  KUTE.fromTo(
-    '#blob3',
-    { path: '#blob3' },
-    { path: '#blob1' },
-    { repeat: 999, duration: 3000, yoyo: true }
-  )
 ).start();
