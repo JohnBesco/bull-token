@@ -35,3 +35,5 @@ const tween = KUTE.fromTo(
   { path: '#blob2' },
   { repeat: 999, duration: 3000, yoyo: true }
 ).start();
+
+gsap.from('.header', { duration: 1, y: '-200px', ease: 'bounce'});
