@@ -37,3 +37,6 @@ const tween = KUTE.fromTo(
 ).start();
 
 gsap.from('.header', { duration: 1, y: '-200px', ease: 'bounce'});
+
+gsap.from('.header-item', { duration: 1, opacity: 0, stagger: 0.5 });
+
