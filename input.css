@@ -151,13 +151,6 @@ input[type="checkbox"] {
 
 .cta-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
 }
 
 .cta-hover:focus {
