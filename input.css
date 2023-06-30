@@ -236,3 +236,20 @@ input[type="checkbox"] {
     border-radius: 100px;
     z-index: -1;
 }
+
+.footer-icon:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transform: scale(0.9); /* Increase the size of the icons on hover */
+    border-radius: 10px;
+    background: #064C35;
+    box-shadow: -100px -100px 250px 0px rgba(2, 30, 21, 0.90), 
+        100px 100px 200px 0px rgba(10, 122, 85, 0.90), -100px 100px 200px 
+        0px rgba(2, 30, 21, 0.20), 100px -100px 200px 0px rgba(2, 30, 21, 0.20), 
+        4px 4px 2px 0px rgba(2, 30, 21, 0.50) inset, -4px -4px 2px 0px rgba(10, 122, 85, 0.30) 
+        inset;
+    transition: all 0.3s; 
+}
+
