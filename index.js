@@ -42,7 +42,9 @@ gsap.from('.header-item', { duration: 1, opacity: 0, stagger: 0.5 });
 
 gsap.from('.hero-item', { duration: 2, x: '-100vw', delay: 1, stagger: 0.5, ease: "elastic.out(1, 0.5)"});
 
-gsap.from(".hero-graphic1", {rotation: -360, x: '100vw', duration: 1, delay: 2});
+gsap.from('.hero-graphic1', {rotation: -360, x: '100vw', duration: 1, delay: 2});
 
-gsap.from(".hero-graphic2", {rotation: -360, x: '100vw', duration: 1, delay: 2});
+gsap.from('.hero-graphic2', {rotation: -360, x: '100vw', duration: 1, delay: 2});
+
+gsap.from('.banner', {duration: 2, y:'100vh', delay: 2, ease: "back.out(2)"});
 
