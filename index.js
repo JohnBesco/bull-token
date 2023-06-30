@@ -41,5 +41,4 @@ gsap.from('.hero-graphic1', {rotation: -360, x: '100vw', duration: 1, delay: 2})
 
 gsap.from('.hero-graphic2', {rotation: -360, x: '100vw', duration: 1, delay: 2});
 
-gsap.from('.banner', {duration: 2, y:'100vh', delay: 2, ease: "back.out(2)"});
-
+gsap.from('.banner', {duration: 2.5, y:'50vh', delay: 1.5, ease: "back.out(2)"});
