@@ -253,3 +253,7 @@ input[type="checkbox"] {
     transition: all 0.3s; 
 }
 
+.footer-menu-link:hover {
+    color: #19FB9B;
+    transition: all 0.3s; 
+}
