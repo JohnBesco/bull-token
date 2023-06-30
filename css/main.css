@@ -599,6 +599,10 @@ video {
   margin-right: auto;
 }
 
+.-mt-12{
+  margin-top: -3rem;
+}
+
 .mb-32{
   margin-bottom: 8rem;
 }
@@ -735,11 +739,6 @@ video {
 .bg-darkGreen{
   --tw-bg-opacity: 1;
   background-color: rgb(2 39 27 / var(--tw-bg-opacity));
-}
-
-.bg-red-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .p-4{
@@ -1024,6 +1023,24 @@ input[type="checkbox"] {
     width: 100%;
     max-width: 650px;
   }
+}
+
+.footer-line-left {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  border-top: 3px solid #143F00;
+  border-radius: 100px;
+  z-index: -1;
+}
+
+.footer-line-right {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  border-top: 3px solid #143F00;
+  border-radius: 100px;
+  z-index: -1;
 }
 
 @media (min-width: 768px){

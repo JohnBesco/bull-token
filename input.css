@@ -211,3 +211,21 @@ input[type="checkbox"] {
         max-width: 650px;
     }
 }
+
+.footer-line-left {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    border-top: 3px solid #143F00;
+    border-radius: 100px;
+    z-index: -1;
+}
+
+.footer-line-right {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    border-top: 3px solid #143F00;
+    border-radius: 100px;
+    z-index: -1;
+}
