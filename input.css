@@ -257,3 +257,10 @@ input[type="checkbox"] {
     color: #19FB9B;
     transition: all 0.3s; 
 }
+
+.footer-logo {
+    transition: transform .7s ease-in-out;
+}
+  .footer-logo:hover {
+    transform: rotate(360deg);
+}

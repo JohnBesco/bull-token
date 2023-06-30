@@ -1117,6 +1117,14 @@ input[type="checkbox"] {
   transition: all 0.3s;
 }
 
+.footer-logo {
+  transition: transform .7s ease-in-out;
+}
+
+.footer-logo:hover {
+  transform: rotate(360deg);
+}
+
 @media (min-width: 480px){
   .sm\:text-center{
     text-align: center;
