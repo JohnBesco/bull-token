@@ -212,6 +212,13 @@ input[type="checkbox"] {
     }
 }
 
+.graphics-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-line-left {
     position: absolute;
     left: 0;
