@@ -7,27 +7,22 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 
-// Clone the banner items and append them to create the infinite scroll effect
 const bannerContainer = document.getElementById('banner-container');
 const bannerItems = bannerContainer.innerHTML;
 
-bannerContainer.innerHTML += bannerItems;
-
-// Scroll the banner container to the right continuously
-const scrollSpeed = 1; // Adjust this value to control the scroll speed
-let scrollAmount = 0;
-
 function scrollBanner() {
-  scrollAmount += scrollSpeed;
+  const scrollSpeed = 1; // Adjust this value to control the scroll speed
+  const scrollAmount = bannerContainer.scrollLeft + scrollSpeed;
 
   bannerContainer.scrollLeft = scrollAmount;
 
-  if (scrollAmount >= bannerContainer.scrollWidth / 2) {
-    scrollAmount = 0;
+  if (scrollAmount >= bannerContainer.scrollWidth - bannerContainer.clientWidth) {
+    bannerContainer.innerHTML += bannerItems;
   }
 }
 
-setInterval(scrollBanner, 30); // Adjust the interval time as per your preference
+setInterval(scrollBanner, 30); // Adjust the interval time as per preference
+
 
 const tween = KUTE.fromTo(
   '#blob1',
