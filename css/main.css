@@ -1099,7 +1099,8 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  width: 55px;
+  height: 55px;
   transform: scale(0.9);
   /* Increase the size of the icons on hover */
   border-radius: 10px;
