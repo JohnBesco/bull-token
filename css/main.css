@@ -720,6 +720,10 @@ video {
   width: 100%;
 }
 
+.w-\[750px\]{
+  width: 750px;
+}
+
 .max-w-xl{
   max-width: 36rem;
 }
@@ -891,6 +895,30 @@ video {
 
 .leading-relaxed{
   line-height: 1.625;
+}
+
+.leading-normal{
+  line-height: 1.5;
+}
+
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-5{
+  line-height: 1.25rem;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 
 .text-offWhite{
