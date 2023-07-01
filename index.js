@@ -33,6 +33,8 @@ const tween = KUTE.fromTo(
 
 gsap.from('.bounce', { duration: 1, y: '-200px', ease: 'bounce'});
 
+gsap.from('.bounce1', { duration: 1, y: '-200px', ease: 'bounce'});
+
 gsap.from('.header-item', { duration: 1, opacity: 0, stagger: 0.5 });
 
 gsap.from('.hero-item', { duration: 2, x: '-100vw', delay: 1, stagger: 0.5, ease: "elastic.out(1, 0.5)"});
