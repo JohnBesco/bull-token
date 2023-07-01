@@ -185,3 +185,23 @@ input[type="checkbox"] {
     background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(14.600000381469727px);
 }
+
+.about-us-title {
+    color: #02271B;
+    text-transform: capitalize;
+    background: linear-gradient(to bottom, rgba(37, 170, 225, 1) 0%, rgba(64, 228, 149, 0.2) 20%, rgba(48, 221, 138, 0.1) 30%, rgba(43, 182, 115, 0) 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+    animation: gradient 5s ease infinite;
+}
+
+    
+@keyframes gradient{
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+}
