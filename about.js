@@ -12,8 +12,8 @@ const dropdowns = document.querySelectorAll('.dropdown');
 dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
     const caret = dropdown.querySelector('.caret');
-    const menu = dropdown.querySelector('.menu');
-    const options = dropdown.querySelectorAll('.menu li');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const options = dropdown.querySelectorAll('.dropdown-menu a');
     const selected = dropdown.querySelector('.selected')
 
     select.addEventListener('click', () => {

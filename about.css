@@ -207,9 +207,8 @@ input[type="checkbox"] {
 }
 
 .dropdown {
-    min-width: 15em;
     position: relative;
-    margin: 2em;
+    margin: 1em;
 }
 
 .dropdown * {
@@ -222,20 +221,23 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px #02271B solid;
-    border-radius: 0.5em;
-    padding: 1em;
+    padding: 0.8em;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .select-clicked {
-    border: 2px #25AAE1 solid;
     box-shadow:  0 0 0.8em #278537;
 }
 
 .select:hover {
-    background:rgba(37, 170, 225, 1)
+    background-image: linear-gradient(
+      to left,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
 }
 
 .caret {
@@ -250,16 +252,13 @@ input[type="checkbox"] {
     transform: rotate(180deg);
 }
 
-.menu {
+.dropdown-menu {
     list-style: none;
-    padding: 0.2em 0.5em;
     background: #278537;
-    border: 1px #30DD8A solid;
     box-shadow: 0 0.5em 1em rgba(255, 255, 255, 0.01);
     border-radius: 0.5em;
     color: #02271B;
     position: absolute;
-    top: 3em;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -269,18 +268,18 @@ input[type="checkbox"] {
     z-index: 1;
 }
 
-.menu li {
+.dropdown-menu li {
     padding: 0.7em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
     cursor: pointer;
 }
 
-.menu li:hover {
+.dropdown-menu li:hover {
     background: #30DD8A;
 }
 
-.active {
+.dropdown-active {
     background: #19FB9B;
 }
 
