@@ -46,3 +46,4 @@ gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "s
 
 gsap.from('#about-us-img', {rotation: -360, x: '-100vw', duration: 1, delay: 1});
 
+gsap.from('.hero-item', { duration: 2, x: '100vw', delay: 1.5, stagger: 0.5, ease: "elastic.out(1, 0.5)"});
