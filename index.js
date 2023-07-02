@@ -47,4 +47,9 @@ gsap.from('.background-graphic1', {duration: 2.5, y:'-100vh', delay: 0, ease: "s
 
 gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "slow(0.7, 0.7, false)"});
 
+gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1.5, ease: "expo.out"});
+
+gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1.5, ease: "expo.out"});
+
+
 
