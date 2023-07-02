@@ -8,6 +8,8 @@
 
 body {
     background-image: url(assets/noiseoverlay.avif);
+    position: fixed; 
+    overflow-y:scroll 
 }
 
 .wrapper {
