@@ -191,7 +191,7 @@ input[type="checkbox"] {
 
 .dropdown {
     position: relative;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 .dropdown * {
