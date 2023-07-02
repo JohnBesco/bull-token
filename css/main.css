@@ -751,6 +751,32 @@ video {
   width: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-min{
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-\[50vw\]{
+  width: 50vw;
+}
+
+.w-\[40vw\]{
+  width: 40vw;
+}
+
+.w-\[80vw\]{
+  width: 80vw;
+}
+
 .max-w-xl{
   max-width: 36rem;
 }
@@ -1266,6 +1292,22 @@ input[type="checkbox"] {
 
   .md\:w-\[850px\]{
     width: 850px;
+  }
+
+  .md\:w-\[40vw\]{
+    width: 40vw;
+  }
+
+  .md\:w-\[80vw\]{
+    width: 80vw;
+  }
+
+  .md\:w-\[70vw\]{
+    width: 70vw;
+  }
+
+  .md\:w-\[60vw\]{
+    width: 60vw;
   }
 
   .md\:-translate-y-14{

@@ -44,7 +44,7 @@ gsap.from('.background-graphic1', {duration: 2.5, y:'-100vh', delay: 0, ease: "s
 
 gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "slow(0.7, 0.7, false)"});
 
-gsap.from('#about-us-img', { duration: 0.1, y: '-100vh', ease: 'bounce'});
+gsap.from('#about-us-img', { duration: 1, y: '-100vh', ease: 'bounce'});
 
 gsap.from('.hero-item', { duration: 2, x: '100vw', delay: 1.5, stagger: 0.5, ease: "elastic.out(1, 0.5)"});
 
@@ -52,7 +52,7 @@ const tl = gsap.timeline({defaults: {duration: 0.75}});
 
 tl.fromTo('.float', {y: -30}, {y: 0, yoyo: true, repeat: -1});
 
-gsap.from('.rotate-in', {rotation: -360, x: '-100vw', duration: 1, delay: 1, stagger: 0.35});
+gsap.from('.rotate-in', {rotation: -360, x: '-100vw', duration: 1, delay: 2.5, stagger: 0.35});
 
 gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1.5, ease: "expo.out"});
 
@@ -60,7 +60,7 @@ gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1.5, ease: "expo.
 
 console.clear();
 
-const mainImg = document.querySelectorAll(".main-img-wrapper > img:nth-child(-n+3)");
+const mainImg = document.querySelector(".main-img-wrapper > img");
 
 const randomX = random(10, 20);
 const randomY = random(20, 30);
