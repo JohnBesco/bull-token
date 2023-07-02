@@ -43,3 +43,6 @@ gsap.from('.header-item', { duration: 1, opacity: 0, stagger: 0.5 });
 gsap.from('.background-graphic1', {duration: 2.5, y:'-100vh', delay: 0, ease: "slow(0.7, 0.7, false)"});
 
 gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "slow(0.7, 0.7, false)"});
+
+gsap.from('#about-us-img', {rotation: -360, x: '-100vw', duration: 1, delay: 1});
+
