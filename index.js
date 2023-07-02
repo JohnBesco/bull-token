@@ -50,4 +50,3 @@ gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "s
 gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1.5, ease: "expo.out"});
 
 gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1.5, ease: "expo.out"});
-

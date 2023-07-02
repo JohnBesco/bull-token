@@ -12,22 +12,16 @@
     <link rel="icon" type="image/png" href="assets/image 1.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="about.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    <script src="https://unpkg.com/@barba/core" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js" defer></script>
     <script src="about.js" defer></script>
     <title>Bull Token</title>
 </head>
-<body data-barba="wrapper" class="bg-darkGreen overflow-x-hidden relative">
-
-    <div class="load-container">
-        <div class="loading-screen"></div>
-    </div>
+<body class="bg-darkGreen overflow-x-hidden relative">
 
     <!-- Background Graphic -->
 
-     <svg width="827" height="379" viewBox="0 0 827 379" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -z-index-10 overflow-x-hidden top-0 right-0"  >
+    <svg width="827" height="379" viewBox="0 0 827 379" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -z-index-10 overflow-x-hidden top-0 right-0"  >
         <g filter="url(#filter0_f_6_18)" class="background-graphic1">
             <path d="M818.928 180.027C797.401 289.895 554.645 103.713 437.746 80.8081C320.847 57.9029 144.847 35.5089 166.374 -74.3592C187.902 -184.227 673.69 -238.334 790.589 -215.429C907.488 -192.524 840.456 70.1591 818.928 180.027Z" fill="#278537"/>
         </g>
@@ -68,72 +62,69 @@
         </nav>
     </header>
 
-    <main data-barba="container" data-barba-namespace="home-section">
+    <!-- Hero Section -->
 
-        <!-- Hero Section -->
+    <section class="mt-24 px-10" id="hero">
+        <div class="container flex flex-col md:flex-row items-center relative mx-auto mt-10 md:space-y-0">
 
-        <section class="mt-24 px-10" id="hero">
-            <div class="container flex flex-col md:flex-row items-center relative mx-auto mt-10 md:space-y-0">
+            <div class="relative mb-10">
+                <img src="assets/topsolanagraphic.png" alt="Solana Token" class="absolute w-12 left-1/3 md:left-1/4 md:w-32 md:-top-[20px] float rotate-in">
+                <img src="assets/AboutUsImg.png" alt="Main Hero Img Bull Logo" class="w-[650px] h-full -z-10 md:w-[850px]" id="about-us-img">
+                <img src="assets/aboutusdetail1.png" alt="Cross About Us Detail" class="absolute w-6 top-1/4 left-[50px] md:left-1/4 md:w-10 md:-bottom-[50px] rotate-in">
+                <img src="assets/bottomsolanagraphic.png" alt="Solana Token" class="absolute w-12 bottom-[50px] left-[10px] md:bottom-[130px] md:left-[25px] md:w-32 float rotate-in">
+                <img src="assets/aboutusdetail2.png" alt="Triangle About Us Detail" class="absolute w-10 bottom-[10px] left-[40px] md:bottom-[30px] md:left-[100px] md:w-20 rotate-in">
+                <img src="assets/aboutusdetail3.png" alt="Cross About Us Detail" class="absolute w-8 bottom-[30px] right-[50px] md:bottom-[20px] md:right-[180px] md:w-16 rotate-in">
+            </div>
 
-                <div class="relative mb-10">
-                    <img src="assets/topsolanagraphic.png" alt="Solana Token" class="absolute w-12 left-1/3 md:left-1/4 md:w-32 md:-top-[20px] float rotate-in">
-                    <img src="assets/AboutUsImg.png" alt="Main Hero Img Bull Logo" class="w-[650px] h-full -z-10 md:w-[850px]" id="about-us-img">
-                    <img src="assets/aboutusdetail1.png" alt="Cross About Us Detail" class="absolute w-6 top-1/4 left-[50px] md:left-1/4 md:w-10 md:-bottom-[50px] rotate-in">
-                    <img src="assets/bottomsolanagraphic.png" alt="Solana Token" class="absolute w-12 bottom-[50px] left-[10px] md:bottom-[130px] md:left-[25px] md:w-32 float rotate-in">
-                    <img src="assets/aboutusdetail2.png" alt="Triangle About Us Detail" class="absolute w-10 bottom-[10px] left-[40px] md:bottom-[30px] md:left-[100px] md:w-20 rotate-in">
-                    <img src="assets/aboutusdetail3.png" alt="Cross About Us Detail" class="absolute w-8 bottom-[30px] right-[50px] md:bottom-[20px] md:right-[180px] md:w-16 rotate-in">
-                </div>
+            <div class="flex flex-col mb-32 md:w-1/2">
+                <h1 class="font-mainFont text-center text-offWhite text-4xl 
+                    leading-relaxed md:leading-normal md:text-7xl md:text-left hero-item">
+                    About Us
+                </h1>
+                <p class="max-w-xl text-center font-textFont text-offWhite 
+                    text-xl md:text-left hero-item">
+                    Our vision extends beyond short-term gains. We're here for the long haul, building a sustainable ecosystem that benefits our community. 
+                    <br>
+                    <br>
+                    We constantly seek innovative solutions, embrace emerging technologies, and 
+                    collaborate with strategic partners to push the boundaries of what's possible in the meme-coin space.
+                </p>
 
-                <div class="flex flex-col mb-32 md:w-1/2">
-                    <h1 class="font-mainFont text-center text-offWhite text-4xl 
-                        leading-relaxed md:leading-normal md:text-7xl md:text-left hero-item">
-                        About Us
-                    </h1>
-                    <p class="max-w-xl text-center font-textFont text-offWhite 
-                        text-xl md:text-left hero-item">
-                        Our vision extends beyond short-term gains. We're here for the long haul, building a sustainable ecosystem that benefits our community. 
-                        <br>
-                        <br>
-                        We constantly seek innovative solutions, embrace emerging technologies, and 
-                        collaborate with strategic partners to push the boundaries of what's possible in the meme-coin space.
-                    </p>
-
-                    <div class="cta-wrapper flex justify-between items-center flex-col md:inline-block"> 
-                        <div class="button-container flex items-center justify-start md:inline-block mt-6 hero-item">
-                            <button class="button-container dropdown cta cta-active text-white bg-brightGreen rounded-full">
-                                <div class="select p-4 px-6 pt-4 rounded-full font-mainFont tracking-wider">
-                                    <span class="selected">Join Us</span>
-                                    <div class="caret"></div>
-                                </div>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="https://discord.gg/YUcPVrCyXx" target="_blank" 
-                                            class="text-white font-textFont text-lg">
-                                            Discord
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://t.me/+GQuKFPLGaSI0ZDVk" target="_blank" 
-                                            class="text-white font-textFont text-lg">
-                                            Telegram
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://magiceden.io/marketplace/terminators" target="_blank" 
-                                            class="text-white font-textFont text-lg">
-                                            Buy NFT
-                                        </a>
-                                    </li>
-                                </ul>
-                            </button>
-                        </div>
+                <div class="cta-wrapper flex justify-between items-center flex-col md:inline-block"> 
+                    <div class="button-container flex items-center justify-start md:inline-block mt-6 hero-item">
+                        <button class="button-container dropdown cta cta-active text-white bg-brightGreen rounded-full">
+                            <div class="select p-4 px-6 pt-4 rounded-full font-mainFont tracking-wider">
+                                <span class="selected">Join Us</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://discord.gg/YUcPVrCyXx" target="_blank" 
+                                        class="text-white font-textFont text-lg">
+                                        Discord
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/+GQuKFPLGaSI0ZDVk" target="_blank" 
+                                        class="text-white font-textFont text-lg">
+                                        Telegram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://magiceden.io/marketplace/terminators" target="_blank" 
+                                        class="text-white font-textFont text-lg">
+                                        Buy NFT
+                                    </a>
+                                </li>
+                            </ul>
+                        </button>
                     </div>
                 </div>
-                
             </div>
-        </section>
-    </main>
-
+            
+        </div>
+    </section>
+    
     <!-- Footer Section -->
 
     <footer class="mt-28 ">
