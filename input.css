@@ -18,8 +18,6 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    color: red;
-    background: linear-gradient(375deg, #1cc7d0, #2ede98);
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
     z-index: 1;
@@ -265,3 +263,4 @@ input[type="checkbox"] {
   .footer-logo:hover {
     transform: rotate(360deg);
 }
+
