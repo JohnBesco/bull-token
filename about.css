@@ -254,8 +254,13 @@ input[type="checkbox"] {
 .dropdown-menu {
     list-style: none;
     border: 1px solid rgba(255, 255, 255, 0.01);
-    background: transparent;
-    backdrop-filter: blur(14.600000381469727px);
+    background-image: linear-gradient(
+      to left,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
     box-shadow: 0 0.5em 1em rgba(255, 255, 255, 0.01);
     border-radius: 0.5em;
     color: #02271B;
