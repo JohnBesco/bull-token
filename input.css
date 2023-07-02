@@ -264,26 +264,3 @@ input[type="checkbox"] {
 .footer-logo:hover {
     transform: rotate(360deg);
 }
-
-.loading-screen {
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    background: rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(14.600000381469727px);
-    width: 0%;
-    height: 100%;
-}
-
-.load-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 10;
-    pointer-events: none;
-}
-
