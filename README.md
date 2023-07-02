@@ -2,7 +2,7 @@
 
 This project was for a cryptocurrency group, who wanted a landing page for their new token. 
 
-View the live site <<a href="https://bullsolana.xyz/" target="_blank">here</a>.
+View the live site <a href="https://bullsolana.xyz/" target="_blank">here</a>.
 
 Technologies used: 
 
