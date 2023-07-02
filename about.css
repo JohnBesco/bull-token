@@ -132,23 +132,6 @@ input[type="checkbox"] {
     height: 3rem;
 }
 
-.cta-hover {
-    width: 160px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFFFFE;
-    cursor: pointer;
-    height: 55px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
 .cta-hover:hover {
     background-position: 100% 0;
 }
@@ -216,19 +199,16 @@ input[type="checkbox"] {
 }
 
 .select {
-    background-image: linear-gradient(
-        to left,
-        #25aae1,
-        #40e495,
-        #30dd8a,
-        #2bb673
-    );
+    background: #19FB9B;
     color: #FFFFFE;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     padding: 0.8em;
+    border-radius: 50px;
+    width: 11.4375rem;
+    height: 3rem;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -238,6 +218,8 @@ input[type="checkbox"] {
 }
 
 .select:hover {
+    transition: background 0.3s;
+    background-position: 100% 0;
     background-image: linear-gradient(
       to left,
       #25aae1,
@@ -245,6 +227,16 @@ input[type="checkbox"] {
       #30dd8a,
       #2bb673
     );
+    color: #FFFFFE;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .caret {
