@@ -1194,7 +1194,7 @@ input[type="checkbox"] {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  background: rgba(255, 255, 255, 0.11);
+  background: red;
   -webkit-backdrop-filter: blur(14.600000381469727px);
           backdrop-filter: blur(14.600000381469727px);
   width: 0%;
