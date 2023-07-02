@@ -47,3 +47,14 @@ gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "s
 gsap.from('#about-us-img', {rotation: -360, x: '-100vw', duration: 1, delay: 1});
 
 gsap.from('.hero-item', { duration: 2, x: '100vw', delay: 1.5, stagger: 0.5, ease: "elastic.out(1, 0.5)"});
+
+const tl = gsap.timeline({defaults: {duration: 0.75}});
+
+tl.fromTo('.float', {y: -30}, {y: 0, yoyo: true, repeat: -1});
+
+gsap.from('.rotate-in', {rotation: -360, x: '-100vw', duration: 1, delay: 1});
+
+gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1.5, ease: "expo.out"});
+
+gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1.5, ease: "expo.out"});
+
