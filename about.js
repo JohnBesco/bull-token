@@ -46,9 +46,9 @@ gsap.from('.hero-item', { duration: 2, x: '100vw', delay: 1.5, stagger: 0.5, eas
 
 const tl = gsap.timeline({defaults: {duration: 0.75}});
 
-gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1.5, ease: "expo.out"});
+gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1, ease: "expo.out"});
 
-gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1.5, ease: "expo.out"});
+gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1, ease: "expo.out"});
 
 console.clear();
 
