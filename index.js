@@ -43,10 +43,6 @@ gsap.from('.hero-graphic2', {rotation: -360, x: '100vw', duration: 1, delay: 2})
 
 gsap.from('.banner', {duration: 2, y:'50vh', delay: 2.5, ease: "back.out(2)"});
 
-gsap.from('.background-graphic1', {duration: 2.5, y:'-100vh', delay: 0, ease: "slow(0.7, 0.7, false)"});
-
-gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "slow(0.7, 0.7, false)"});
-
 gsap.from('.enter-in-right', { duration: 2, x: '100vw', delay: 1.5, ease: "expo.out"});
 
 gsap.from('.enter-in-left', { duration: 2, x: '-100vw', delay: 1.5, ease: "expo.out"});
