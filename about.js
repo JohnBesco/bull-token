@@ -44,7 +44,7 @@ gsap.from('.background-graphic1', {duration: 2.5, y:'-100vh', delay: 0, ease: "s
 
 gsap.from('.background-graphic2', {duration: 2.5, x:'-100vw', delay: 0, ease: "slow(0.7, 0.7, false)"});
 
-gsap.from('#about-us-img', { duration: 1, y: '-100vh', ease: 'bounce'});
+gsap.from('#about-us-img', { duration: 0.1, y: '-100vh', ease: 'bounce'});
 
 gsap.from('.hero-item', { duration: 2, x: '100vw', delay: 1.5, stagger: 0.5, ease: "elastic.out(1, 0.5)"});
 
@@ -72,7 +72,7 @@ const randomAngle = random(8, 12);
 TweenLite.set(mainImg, {
   x: randomX(-1),
   y: randomX(1),
-  delay: 1,
+  delay: 0.5,
   rotation: randomAngle(-1)
 
 });
