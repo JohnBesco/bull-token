@@ -1,0 +1,164 @@
+---
+const RAYDIUM = 'https://raydium.io/swap/?inputMint=sol&outputMint=BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const BIRDEYE = 'https://birdeye.so/solana/token/BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const DISCORD = 'https://discord.com/invite/YUcPVrCyXx';
+
+const steps = [
+  {
+    n: '1',
+    title: 'Check the chart',
+    body: 'Find $BULL on Birdeye. See the contract, the holders, the on-chain data. Do your own research.',
+    cta: 'Open Birdeye',
+    href: BIRDEYE,
+  },
+  {
+    n: '2',
+    title: 'Swap SOL for $BULL',
+    body: 'Got SOL in your wallet? Swap on Raydium in under 30 seconds. Paste the contract address if needed.',
+    cta: 'Swap on Raydium',
+    href: RAYDIUM,
+  },
+  {
+    n: '3',
+    title: 'Join the community',
+    body: 'Get in the Discord. That\'s where the holders talk, the questions get answered, and the conviction gets built.',
+    cta: 'Join Discord',
+    href: DISCORD,
+  },
+];
+---
+
+<section class="how" id="how-to-buy" aria-label="How to buy $BULL">
+  <div class="container">
+    <h2 class="how-headline" data-reveal>HOW TO GET IN</h2>
+    <p class="how-sub" data-reveal style="--reveal-delay: 60ms">
+      Three steps. No guides needed.
+    </p>
+
+    <ol class="how-steps" aria-label="Steps to buy $BULL">
+      {steps.map((step, i) => (
+        <li class="step" data-reveal style={`--reveal-delay: ${80 + i * 80}ms`}>
+          <span class="step-number" aria-hidden="true">{step.n}</span>
+          <div class="step-content">
+            <h3 class="step-title">{step.title}</h3>
+            <p class="step-body">{step.body}</p>
+            <a
+              href={step.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="step-link"
+              aria-label={`${step.cta}, opens in new tab`}
+            >
+              {step.cta}
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 12L12 2M12 2H6M12 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .how {
+    padding-block: var(--bull-space-32);
+    background-color: var(--bull-surface);
+    border-top: 1px solid var(--bull-line);
+    border-bottom: 1px solid var(--bull-line);
+  }
+
+  .how-headline {
+    font-family: var(--bull-font-display);
+    font-size: var(--bull-text-display-md);
+    color: var(--bull-ink-900);
+    line-height: 0.95;
+    margin-bottom: var(--bull-space-4);
+  }
+
+  .how-sub {
+    font-size: var(--bull-text-body-lg);
+    color: var(--bull-ink-500);
+    margin-bottom: var(--bull-space-10);
+  }
+
+  .how-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 720px;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: var(--bull-space-6);
+    align-items: start;
+    padding-block: var(--bull-space-8);
+    border-bottom: 1px solid var(--bull-line);
+  }
+
+  .step:last-child {
+    border-bottom: none;
+  }
+
+  .step-number {
+    font-family: var(--bull-font-display);
+    font-size: var(--bull-text-display-sm);
+    color: var(--bull-brand-600);
+    line-height: 1;
+    padding-top: 4px;
+  }
+
+  .step-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bull-space-3);
+    padding-block: var(--bull-space-1);
+  }
+
+  .step-title {
+    font-size: var(--bull-text-h4);
+    font-weight: var(--bull-fw-bold);
+    color: var(--bull-ink-900);
+    line-height: 1.2;
+  }
+
+  .step-body {
+    font-size: var(--bull-text-body-md);
+    color: var(--bull-ink-700);
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .step-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--bull-space-1);
+    font-size: var(--bull-text-body-sm);
+    font-weight: var(--bull-fw-semibold);
+    color: var(--bull-brand-600);
+    text-decoration: none;
+    transition: gap var(--bull-duration-sm) var(--bull-ease-out-expo),
+                opacity var(--bull-duration-sm) var(--bull-ease-out-expo);
+    margin-top: var(--bull-space-1);
+  }
+
+  .step-link:hover {
+    gap: var(--bull-space-2);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 640px) {
+    .step {
+      grid-template-columns: 1fr;
+      gap: var(--bull-space-3);
+    }
+
+    .step-number {
+      font-size: 28px;
+    }
+  }
+</style>

@@ -1,0 +1,1088 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const RAYDIUM = 'https://raydium.io/swap/?inputMint=sol&outputMint=BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const BIRDEYE = 'https://birdeye.so/solana/token/BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const CONTRACT = 'BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+---
+
+<Layout title="$BULL — Frame Layout">
+
+  <!-- ── NAV: transparent overlay ──────────────────────── -->
+  <header class="nav-c">
+    <div class="nav-inner-c">
+      <a href="/" class="logo-c" aria-label="$BULL home">
+        <span class="logo-word-c">BULL</span>
+        <span class="logo-badge-c">$BULL</span>
+      </a>
+      <nav class="links-c" aria-label="Primary navigation">
+        <a href="#position">About</a>
+        <a href="#community">Community</a>
+        <a href="#tokenomics">Tokenomics</a>
+      </nav>
+      <div class="nav-right-c">
+        <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn-c btn-primary-c">
+          Buy $BULL
+        </a>
+        <button class="nav-toggle-c" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-c">
+          <span class="nav-toggle-bar-c"></span>
+          <span class="nav-toggle-bar-c"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-c" id="mobile-nav-c" aria-hidden="true" inert>
+    <nav aria-label="Mobile navigation">
+      <a href="#position" class="mobile-nav-link-c">About</a>
+      <a href="#community" class="mobile-nav-link-c">Community</a>
+      <a href="#tokenomics" class="mobile-nav-link-c">Tokenomics</a>
+    </nav>
+    <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn-c btn-primary-c btn-lg-c mobile-nav-cta-c">
+      Buy $BULL on Raydium
+    </a>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ── FRAME 1: HERO — full viewport ─────────────────── -->
+    <section class="frame-hero-c" aria-label="Hero">
+      <div class="frame-hero-bg-c" aria-hidden="true">
+        <picture>
+          <img
+            src="/heroimg.avif"
+            alt=""
+            class="frame-hero-img-c"
+            width="800"
+            height="800"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </picture>
+      </div>
+      <div class="frame-hero-content-c">
+        <h1 class="frame-hero-head-c">$BULL</h1>
+        <p class="frame-hero-tagline-c">We run together.</p>
+        <div class="frame-hero-ctas-c">
+          <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn-c btn-primary-c btn-lg-c">
+            Buy $BULL
+          </a>
+          <a href={BIRDEYE} target="_blank" rel="noopener noreferrer" class="btn-c btn-outline-c btn-lg-c">
+            View chart
+          </a>
+        </div>
+      </div>
+      <div class="frame-hero-foot-c" aria-hidden="true">
+        <span class="frame-hero-scroll-c">↓ Scroll</span>
+      </div>
+    </section>
+
+    <!-- ── TICKER ─────────────────────────────────────────── -->
+    <div class="ticker-c" aria-hidden="true">
+      <div class="ticker-track-c">
+        <span class="ticker-item-c">$BULL · SOLANA · WE RUN TOGETHER · 2,140 HOLDERS · 0% TAX · STILL EARLY · COMMUNITY BEFORE EVERYTHING · BUILT TO LAST · </span>
+        <span class="ticker-item-c" aria-hidden="true">$BULL · SOLANA · WE RUN TOGETHER · 2,140 HOLDERS · 0% TAX · STILL EARLY · COMMUNITY BEFORE EVERYTHING · BUILT TO LAST · </span>
+      </div>
+    </div>
+
+    <!-- ── FRAME 2: STATS BAND ─────────────────────────────── -->
+    <section class="frame-stats-c" id="stats" aria-label="Key stats" data-reveal>
+      <div class="stats-band-c">
+        <div class="stat-c">
+          <span class="stat-val-c">2,140+</span>
+          <span class="stat-lbl-c">Holders</span>
+        </div>
+        <div class="stat-divider-c" aria-hidden="true"></div>
+        <div class="stat-c">
+          <span class="stat-val-c">9.06B</span>
+          <span class="stat-lbl-c">Total supply</span>
+        </div>
+        <div class="stat-divider-c" aria-hidden="true"></div>
+        <div class="stat-c">
+          <span class="stat-val-c">0%</span>
+          <span class="stat-lbl-c">Tax</span>
+        </div>
+        <div class="stat-divider-c" aria-hidden="true"></div>
+        <div class="stat-c">
+          <span class="stat-val-c">Solana</span>
+          <span class="stat-lbl-c">Network</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FRAME 3: CHAPTER I — The Position ─────────────── -->
+    <section class="frame-chapter-c frame-light-c" id="position" aria-label="Still early" data-reveal>
+      <div class="chapter-inner-c chapter-split-c">
+        <div class="chapter-left-c">
+          <h2 class="chapter-head-c">STILL EARLY IS A FEATURE.</h2>
+        </div>
+        <div class="chapter-right-c">
+          <p class="chapter-copy-c">
+            2,140 holders at current market cap. Every major token started at a number smaller
+            than this one. The chart shows where $BULL has been.
+            Your entry point is where it goes next.
+          </p>
+          <p class="chapter-copy-c">
+            Small cap on Solana means your position can move the needle. At 2,140 holders,
+            the floor is established and the ceiling is open.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FRAME 4: CHAPTER II — The Terms ────────────────── -->
+    <section class="frame-chapter-c frame-dark-c" aria-label="Zero tax" data-reveal>
+      <div class="chapter-inner-c chapter-split-c chapter-reverse-c">
+        <div class="chapter-right-c">
+          <h2 class="chapter-head-c"><span class="chapter-accent-c">ZERO TAX.</span><br />ZERO TEAM BAG.</h2>
+        </div>
+        <div class="chapter-left-c">
+          <p class="chapter-copy-c">
+            No buy tax. No sell tax. No team allocation waiting to exit on your position.
+            Every transaction goes full to the buyer. Every token in circulation
+            was purchased by someone who wanted to be here.
+          </p>
+          <p class="chapter-copy-c">
+            Look at the contract. The functions for tax collection don't exist in it.
+          </p>
+          <a href={BIRDEYE} target="_blank" rel="noopener noreferrer" class="chapter-link-c">
+            Verify on Birdeye →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FRAME 5: CHAPTER III — The Community ──────────── -->
+    <section class="frame-chapter-c frame-light-c" id="community" aria-label="Community" data-reveal>
+      <div class="chapter-inner-c chapter-split-c">
+        <div class="chapter-left-c">
+          <h2 class="chapter-head-c">THE COMMUNITY IS THE WHOLE POINT.</h2>
+        </div>
+        <div class="chapter-right-c">
+          <p class="chapter-copy-c">
+            2,140 people chose to hold through noise and narrative shifts.
+            Not because of a roadmap or a promise. Because they read the contract,
+            saw the community, and decided to stay.
+          </p>
+          <div class="chapter-socials-c">
+            <a href="https://discord.gg/bull" target="_blank" rel="noopener noreferrer" class="btn-c btn-ghost-c">
+              Join Discord
+            </a>
+            <a href="https://t.me/bullsolana" target="_blank" rel="noopener noreferrer" class="btn-c btn-ghost-c">
+              Join Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FRAME 6: TOKENOMICS ─────────────────────────────── -->
+    <section class="frame-token-c" id="tokenomics" aria-label="Tokenomics" data-reveal>
+      <div class="token-inner-c">
+        <div class="token-head-wrap-c">
+          <h2 class="token-head-c">TOKENOMICS</h2>
+          <p class="token-desc-c">On-chain. Verifiable. No surprises.</p>
+        </div>
+        <div class="token-data-c">
+          <div class="token-grid-c">
+            <div class="token-row-c">
+              <span class="token-key-c">Name</span>
+              <span class="token-val-c">$BULL</span>
+            </div>
+            <div class="token-row-c">
+              <span class="token-key-c">Network</span>
+              <span class="token-val-c">Solana</span>
+            </div>
+            <div class="token-row-c">
+              <span class="token-key-c">Total supply</span>
+              <span class="token-val-c">9,060,000,000</span>
+            </div>
+            <div class="token-row-c">
+              <span class="token-key-c">Buy / sell tax</span>
+              <span class="token-val-c token-accent-c">0% / 0%</span>
+            </div>
+            <div class="token-row-c">
+              <span class="token-key-c">Team allocation</span>
+              <span class="token-val-c token-accent-c">0%</span>
+            </div>
+          </div>
+          <div class="token-addr-c">
+            <span class="token-addr-label-c">Contract address</span>
+            <div class="token-addr-box-c">
+              <code class="token-addr-code-c">{CONTRACT}</code>
+              <button class="copy-btn-c" data-copy={CONTRACT} aria-label="Copy contract address">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FRAME 8: FINAL CTA ─────────────────────────────── -->
+    <section class="frame-cta-c" aria-label="Call to action" data-reveal>
+      <div class="cta-bg-c" aria-hidden="true">
+        <img src="/heroimg.avif" alt="" class="cta-bg-img-c" loading="lazy" />
+      </div>
+      <div class="cta-content-c">
+        <h2 class="cta-head-c">YOUR ENTRY.<br />YOUR DECISION.</h2>
+        <p class="cta-sub-c">2,140 holders are already in. Still early enough to matter.</p>
+        <div class="cta-btns-c">
+          <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn-c btn-primary-c btn-lg-c">
+            Buy $BULL on Raydium
+          </a>
+          <a href={BIRDEYE} target="_blank" rel="noopener noreferrer" class="btn-c btn-outline-c btn-lg-c">
+            View chart on Birdeye
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer-c">
+    <div class="footer-inner-c">
+      <span class="footer-logo-c">BULL</span>
+      <p class="footer-copy-c">© 2025 $BULL. Community-driven. Not financial advice.</p>
+      <div class="footer-social-c">
+        <a href="https://discord.gg/bull" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://t.me/bullsolana" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://x.com/bullsolana" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+  </footer>
+
+</Layout>
+
+<script>
+  // Copy contract address
+  document.querySelectorAll('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = (btn as HTMLElement).dataset.copy || '';
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+      });
+    });
+  });
+
+  // Nav scroll backdrop
+  const nav = document.querySelector('.nav-c') as HTMLElement;
+  const onScroll = () => {
+    nav?.classList.toggle('nav-scrolled-c', window.scrollY > 40);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle-c') as HTMLElement;
+  const mobileNav = document.querySelector('.mobile-nav-c') as HTMLElement;
+
+  const setMenu = (open: boolean) => {
+    navToggle?.setAttribute('aria-expanded', String(open));
+    mobileNav?.classList.toggle('is-open', open);
+    mobileNav?.setAttribute('aria-hidden', String(!open));
+    if (open) {
+      mobileNav?.removeAttribute('inert');
+    } else {
+      mobileNav?.setAttribute('inert', '');
+    }
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  navToggle?.addEventListener('click', () => {
+    const isOpen = navToggle?.getAttribute('aria-expanded') === 'true';
+    setMenu(!isOpen);
+  });
+
+  document.querySelectorAll('.mobile-nav-link-c').forEach(link => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Escape' && navToggle?.getAttribute('aria-expanded') === 'true') {
+      setMenu(false);
+      navToggle.focus();
+    }
+  });
+</script>
+
+<style>
+  /* ── Layout C: Frame — Cinematic Full-Width Panels ────── */
+
+  /* NAV */
+  .nav-c {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 40px;
+    height: 64px;
+    transition: background-color 240ms var(--bull-ease-out-expo), border-color 240ms var(--bull-ease-out-expo);
+    border-bottom: 1px solid transparent;
+  }
+
+  .nav-c.nav-scrolled-c {
+    background-color: rgba(var(--bull-paper-rgb), 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-color: var(--bull-line);
+  }
+
+  .nav-inner-c {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .logo-c {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .logo-word-c {
+    font-family: var(--bull-font-display);
+    font-size: 28px;
+    color: var(--bull-ink-900);
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+
+  .logo-badge-c {
+    font-family: var(--bull-font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--bull-paper);
+    background-color: var(--bull-brand-600);
+    padding: 3px 8px;
+    border-radius: var(--bull-radius-xs);
+    line-height: 1.4;
+  }
+
+  .links-c {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .links-c a {
+    font-family: var(--bull-font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(var(--bull-ink-900-rgb), 0.7);
+    text-decoration: none;
+    transition: color 160ms var(--bull-ease-out-expo);
+  }
+
+  .links-c a:hover { color: var(--bull-ink-900); }
+
+  /* NAV RIGHT GROUP */
+  .nav-right-c {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  /* HAMBURGER TOGGLE */
+  .nav-toggle-c {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 11px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: var(--bull-radius-xs);
+    transition: background-color var(--bull-duration-sm);
+  }
+
+  .nav-toggle-c:hover { background-color: rgba(var(--bull-ink-900-rgb), 0.06); }
+
+  .nav-toggle-bar-c {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--bull-ink-900);
+    border-radius: 2px;
+    transition: transform var(--bull-duration-sm) var(--bull-ease-out-expo), opacity var(--bull-duration-sm);
+  }
+
+  .nav-toggle-c[aria-expanded="true"] .nav-toggle-bar-c:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .nav-toggle-c[aria-expanded="true"] .nav-toggle-bar-c:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  /* MOBILE NAV PANEL */
+  .mobile-nav-c {
+    position: fixed;
+    inset: 64px 0 0;
+    z-index: 99;
+    background-color: rgba(var(--bull-paper-rgb), 0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 240ms var(--bull-ease-out-expo), transform 240ms var(--bull-ease-out-expo);
+    border-top: 1px solid var(--bull-line);
+    overflow-y: auto;
+  }
+
+  .mobile-nav-c.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .mobile-nav-link-c {
+    font-family: var(--bull-font-display);
+    font-size: clamp(40px, 10vw, 56px);
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+    color: var(--bull-ink-900);
+    text-decoration: none;
+    display: block;
+    padding-block: 16px;
+    border-bottom: 1px solid var(--bull-line);
+    transition: color 160ms var(--bull-ease-out-expo);
+  }
+
+  .mobile-nav-link-c:first-child { border-top: 1px solid var(--bull-line); }
+  .mobile-nav-link-c:hover { color: var(--bull-brand-600); }
+
+  .mobile-nav-cta-c { margin-top: 32px; }
+
+  /* BUTTONS */
+  .btn-c {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    min-height: 44px;
+    font-family: var(--bull-font-body);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: var(--bull-radius-full);
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 160ms var(--bull-ease-out-expo), transform var(--bull-duration-sm);
+    border: 1px solid transparent;
+  }
+
+  .btn-c:active { transform: scale(0.97); }
+
+  .btn-primary-c {
+    background-color: var(--bull-brand-600);
+    color: var(--bull-paper);
+    border-color: var(--bull-brand-600);
+  }
+
+  .btn-primary-c:hover { background-color: var(--bull-brand-500); }
+
+  .btn-ghost-c {
+    background-color: transparent;
+    color: var(--bull-ink-900);
+    border-color: var(--bull-line);
+  }
+
+  .btn-ghost-c:hover { border-color: var(--bull-ink-700); }
+
+  .btn-outline-c {
+    background-color: transparent;
+    color: var(--bull-ink-900);
+    border-color: rgba(var(--bull-ink-900-rgb), 0.45);
+  }
+
+  .btn-outline-c:hover {
+    border-color: rgba(var(--bull-ink-900-rgb), 0.8);
+    background-color: rgba(var(--bull-ink-900-rgb), 0.05);
+  }
+
+  .btn-lg-c {
+    padding: 16px 32px;
+    font-size: 17px;
+  }
+
+  /* HERO FRAME: full viewport */
+  .frame-hero-c {
+    min-height: 100svh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--bull-paper);
+  }
+
+  .frame-hero-bg-c {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .frame-hero-img-c {
+    width: 80vmin;
+    height: 80vmin;
+    object-fit: contain;
+    object-position: center 30%;
+    filter: invert(1);
+    opacity: 0.08;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Single subtle radial behind the mark */
+  .frame-hero-c::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(var(--bull-brand-600-rgb), 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .frame-hero-content-c {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 64px;
+    padding-inline: 24px;
+    max-width: 900px;
+  }
+
+  /* Load-in stagger — not scroll-triggered (above fold) */
+  .frame-hero-head-c {
+    animation: hero-rise-c 700ms 100ms both var(--bull-ease-out-expo);
+  }
+
+  .frame-hero-tagline-c {
+    animation: hero-fade-c 600ms 500ms both var(--bull-ease-out-expo);
+  }
+
+  .frame-hero-ctas-c {
+    animation: hero-fade-c 600ms 700ms both var(--bull-ease-out-expo);
+  }
+
+  @keyframes hero-rise-c {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes hero-fade-c {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .frame-hero-head-c,
+    .frame-hero-tagline-c,
+    .frame-hero-ctas-c {
+      animation: none;
+    }
+  }
+
+  .frame-hero-head-c {
+    font-family: var(--bull-font-display);
+    font-size: clamp(100px, 20vw, 240px);
+    line-height: 0.88;
+    color: var(--bull-ink-900);
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+
+  .frame-hero-tagline-c {
+    font-family: var(--bull-font-body);
+    font-size: clamp(18px, 2vw, 24px);
+    color: var(--bull-ink-700);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-bottom: 48px;
+  }
+
+  .frame-hero-ctas-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .frame-hero-foot-c {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .frame-hero-scroll-c {
+    font-family: var(--bull-font-body);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--bull-ink-500);
+    letter-spacing: 0.06em;
+    animation: scroll-fade-c 2s ease-in-out infinite;
+  }
+
+  @keyframes scroll-fade-c {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+  }
+
+  /* TICKER */
+  .ticker-c {
+    background-color: var(--bull-surface);
+    border-top: 1px solid var(--bull-line);
+    border-bottom: 1px solid var(--bull-line);
+    overflow: hidden;
+    padding-block: 14px;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  .ticker-track-c {
+    display: flex;
+    width: max-content;
+    animation: marquee-c 32s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes marquee-c {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .ticker-item-c {
+    font-family: var(--bull-font-display);
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    color: var(--bull-brand-600);
+    flex-shrink: 0;
+  }
+
+  /* STATS BAND: narrow, edge-to-edge */
+  .frame-stats-c {
+    background-color: var(--bull-surface);
+    border-bottom: 1px solid var(--bull-line);
+  }
+
+  .stats-band-c {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .stat-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 48px;
+    flex: 1;
+    max-width: 280px;
+  }
+
+  .stat-divider-c {
+    width: 1px;
+    background-color: var(--bull-line);
+    flex-shrink: 0;
+    margin-block: 20px;
+  }
+
+  .stat-val-c {
+    font-family: var(--bull-font-display);
+    font-size: clamp(32px, 3.5vw, 48px);
+    color: var(--bull-brand-600);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .stat-lbl-c {
+    font-family: var(--bull-font-body);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--bull-ink-500);
+    letter-spacing: 0.04em;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  /* CHAPTERS: full-width alternating panels */
+  .frame-chapter-c {
+    width: 100%;
+  }
+
+  .frame-light-c {
+    background-color: var(--bull-paper);
+    border-bottom: 1px solid var(--bull-line);
+  }
+
+  .frame-dark-c {
+    background-color: var(--bull-surface);
+    border-bottom: 1px solid var(--bull-line);
+  }
+
+  .chapter-inner-c {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 96px 80px;
+  }
+
+  .chapter-split-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .chapter-reverse-c .chapter-right-c {
+    order: -1;
+  }
+
+  .chapter-left-c {}
+  .chapter-right-c {}
+
+  .chapter-head-c {
+    font-family: var(--bull-font-display);
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 0.95;
+    color: var(--bull-ink-900);
+    letter-spacing: -0.01em;
+  }
+
+  .chapter-accent-c {
+    color: var(--bull-brand-600);
+  }
+
+  .chapter-copy-c {
+    font-family: var(--bull-font-body);
+    font-size: 17px;
+    color: var(--bull-ink-700);
+    line-height: 1.75;
+    max-width: 52ch;
+    text-wrap: pretty;
+    margin-bottom: 20px;
+  }
+
+  .chapter-copy-c:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .chapter-socials-c {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  .chapter-link-c {
+    display: inline-block;
+    margin-top: 24px;
+    font-family: var(--bull-font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bull-brand-600);
+    text-decoration: none;
+    transition: opacity var(--bull-duration-sm);
+  }
+
+  .chapter-link-c:hover { opacity: 0.8; }
+
+  /* TOKENOMICS PANEL */
+  .frame-token-c {
+    background-color: var(--bull-surface);
+    border-bottom: 1px solid var(--bull-line);
+    padding-block: 96px;
+  }
+
+  .token-inner-c {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .token-head-c {
+    font-family: var(--bull-font-display);
+    font-size: clamp(40px, 5vw, 64px);
+    color: var(--bull-ink-900);
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+
+  .token-desc-c {
+    font-family: var(--bull-font-body);
+    font-size: 14px;
+    color: var(--bull-ink-500);
+    font-weight: 500;
+  }
+
+  .token-grid-c {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .token-row-c {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 16px;
+    border-bottom: 1px solid var(--bull-line);
+    gap: 16px;
+  }
+
+  .token-row-c:first-child {
+    border-top: 1px solid var(--bull-line);
+  }
+
+  .token-key-c {
+    font-family: var(--bull-font-mono);
+    font-size: 13px;
+    color: var(--bull-ink-500);
+  }
+
+  .token-val-c {
+    font-family: var(--bull-font-mono);
+    font-size: 14px;
+    color: var(--bull-ink-900);
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .token-accent-c { color: var(--bull-brand-600); }
+
+  .token-addr-c {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .token-addr-label-c {
+    font-family: var(--bull-font-body);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--bull-ink-500);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .token-addr-box-c {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--bull-paper);
+    border: 1px solid var(--bull-line);
+    border-radius: var(--bull-radius-sm);
+  }
+
+  .token-addr-code-c {
+    font-family: var(--bull-font-mono);
+    font-size: 12px;
+    color: var(--bull-ink-700);
+    word-break: break-all;
+    flex: 1;
+  }
+
+  .copy-btn-c {
+    flex-shrink: 0;
+    font-family: var(--bull-font-body);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--bull-brand-600);
+    background: none;
+    border: 1px solid var(--bull-brand-600);
+    border-radius: var(--bull-radius-xs);
+    min-height: 44px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color var(--bull-duration-sm);
+  }
+
+  .copy-btn-c:hover { background-color: rgba(var(--bull-brand-600-rgb), 0.1); }
+
+  /* FINAL CTA FRAME */
+  .frame-cta-c {
+    min-height: 70svh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--bull-paper);
+  }
+
+  .cta-bg-c {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .cta-bg-img-c {
+    width: 60vmin;
+    height: 60vmin;
+    object-fit: contain;
+    object-position: center 30%;
+    filter: invert(1);
+    opacity: 0.04;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Single allowed glow */
+  .frame-cta-c::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(var(--bull-brand-600-rgb), 0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-content-c {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: 24px;
+    max-width: 800px;
+  }
+
+  .cta-head-c {
+    font-family: var(--bull-font-display);
+    font-size: clamp(56px, 9vw, 120px);
+    line-height: 0.92;
+    color: var(--bull-ink-900);
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+  }
+
+  .cta-sub-c {
+    font-family: var(--bull-font-body);
+    font-size: 18px;
+    color: var(--bull-ink-700);
+    line-height: 1.65;
+    max-width: 400px;
+    margin-bottom: 48px;
+    text-wrap: pretty;
+  }
+
+  .cta-btns-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* FOOTER */
+  .footer-c {
+    background-color: var(--bull-surface);
+    border-top: 1px solid var(--bull-line);
+    padding-block: 48px;
+    padding-inline: 40px;
+  }
+
+  .footer-inner-c {
+    max-width: 1400px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo-c {
+    font-family: var(--bull-font-display);
+    font-size: 24px;
+    color: var(--bull-ink-500);
+    letter-spacing: 0.04em;
+  }
+
+  .footer-copy-c {
+    font-family: var(--bull-font-body);
+    font-size: 13px;
+    color: var(--bull-ink-500);
+  }
+
+  .footer-social-c {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-social-c a {
+    font-family: var(--bull-font-body);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--bull-ink-500);
+    text-decoration: none;
+    transition: color var(--bull-duration-sm);
+  }
+
+  .footer-social-c a:hover { color: var(--bull-ink-900); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .nav-c { padding-inline: 16px; }
+    .links-c { display: none; }
+    .nav-toggle-c { display: flex; }
+    .chapter-inner-c { padding: 64px 24px; }
+    .chapter-split-c { grid-template-columns: 1fr; gap: 32px; }
+.token-inner-c { grid-template-columns: 1fr; gap: 40px; padding-inline: 24px; }
+
+    .stats-band-c { flex-wrap: wrap; }
+    .stat-divider-c { display: none; }
+    .stat-c { min-width: 140px; padding: 32px 24px; }
+    .footer-inner-c { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (max-width: 480px) {
+    .frame-hero-head-c { font-size: 80px; }
+    .stats-band-c { display: grid; grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track-c { animation: none; }
+    .frame-hero-scroll-c { animation: none; }
+  }
+</style>

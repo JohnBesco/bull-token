@@ -1,0 +1,139 @@
+---
+interface Stat {
+  value: string;
+  suffix?: string;
+  label: string;
+  countTo?: number;
+  isText?: boolean;
+}
+
+const stats: Stat[] = [
+  { value: '2,140', suffix: '+', label: 'Holders', countTo: 2140 },
+  { value: '9.06B', label: 'Total supply', isText: true },
+  { value: 'Solana', label: 'Network', isText: true },
+];
+---
+
+<section class="statbar" id="stats" aria-label="Key stats">
+  <div class="container">
+    <dl class="statbar-grid">
+      {stats.map((stat, i) => (
+        <div
+          class="stat-item"
+          data-reveal
+          style={`--reveal-delay: ${i * 80}ms`}
+        >
+          <dd
+            class="stat-value"
+            data-count-to={stat.countTo}
+            data-suffix={stat.suffix || ''}
+            data-is-text={stat.isText}
+          >
+            {stat.value}{stat.suffix}
+          </dd>
+          <dt class="stat-label">{stat.label}</dt>
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>
+
+<script>
+  function countUp(el: HTMLElement, end: number, suffix: string) {
+    const duration = 1400;
+    const start = performance.now();
+
+    function update(now: number) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      const current = Math.round(end * eased);
+      el.textContent = current.toLocaleString() + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target as HTMLElement;
+        const countTo = Number(el.dataset.countTo);
+        const suffix = el.dataset.suffix || '';
+        const isText = el.dataset.isText === 'true';
+        if (!isText && countTo > 0) countUp(el, countTo, suffix);
+        observer.unobserve(el);
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  document.querySelectorAll('[data-count-to]').forEach(el => {
+    observer.observe(el as HTMLElement);
+  });
+</script>
+
+<style>
+  .statbar {
+    border-top: 1px solid var(--bull-line);
+    border-bottom: 1px solid var(--bull-line);
+    padding-block: var(--bull-space-12);
+  }
+
+  .statbar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .stat-item {
+    padding-inline: var(--bull-space-8);
+    text-align: center;
+    position: relative;
+  }
+
+  .stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: var(--bull-line);
+  }
+
+  .stat-value {
+    font-family: var(--bull-font-display);
+    font-size: var(--bull-text-display-sm);
+    color: var(--bull-brand-600);
+    line-height: 1.05;
+    display: block;
+    margin-bottom: var(--bull-space-2);
+  }
+
+  .stat-label {
+    font-size: var(--bull-text-body-sm);
+    color: var(--bull-ink-700);
+    font-weight: var(--bull-fw-medium);
+    text-transform: none;
+    letter-spacing: 0;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .statbar-grid {
+      grid-template-columns: 1fr;
+      gap: var(--bull-space-8);
+    }
+
+    .stat-item {
+      padding-inline: 0;
+    }
+
+    .stat-item::after {
+      display: none;
+    }
+  }
+</style>

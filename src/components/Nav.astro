@@ -1,0 +1,216 @@
+---
+const RAYDIUM = 'https://raydium.io/swap/?inputMint=sol&outputMint=BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+---
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" aria-label="$BULL home">
+      <span class="nav-wordmark">BULL</span>
+      <span class="nav-badge">$BULL</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#how-to-buy">How to buy</a>
+      <a href="#community">Community</a>
+    </nav>
+
+    <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">
+      Buy $BULL
+    </a>
+
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <nav aria-label="Mobile navigation">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#how-to-buy" class="mobile-link">How to buy</a>
+    <a href="#community" class="mobile-link">Community</a>
+    <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;">
+      Buy $BULL
+    </a>
+  </nav>
+</div>
+
+<script>
+  const hamburger = document.querySelector('.nav-hamburger') as HTMLButtonElement;
+  const mobileMenu = document.querySelector('.mobile-menu') as HTMLElement;
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  hamburger?.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('is-open');
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: var(--bull-z-sticky);
+    height: 64px;
+    background-color: rgba(var(--bull-paper-rgb), 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--bull-line);
+  }
+
+  .nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--bull-space-8);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--bull-space-2);
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .nav-wordmark {
+    font-family: var(--bull-font-display);
+    font-size: 28px;
+    color: var(--bull-ink-900);
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+
+  .nav-badge {
+    font-family: var(--bull-font-body);
+    font-size: var(--bull-text-body-sm);
+    font-weight: var(--bull-fw-semibold);
+    color: var(--bull-paper);
+    background-color: var(--bull-brand-600);
+    padding: 3px 8px;
+    border-radius: var(--bull-radius-xs);
+    line-height: 1.4;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--bull-space-8);
+    flex: 1;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: var(--bull-text-body-sm);
+    font-weight: var(--bull-fw-semibold);
+    color: var(--bull-ink-700);
+    text-decoration: none;
+    transition: color var(--bull-duration-sm) var(--bull-ease-out-expo);
+  }
+
+  .nav-links a:hover {
+    color: var(--bull-ink-900);
+  }
+
+  .nav-cta {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    font-size: var(--bull-text-body-sm);
+  }
+
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: var(--bull-space-2);
+    cursor: pointer;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--bull-ink-900);
+    border-radius: 2px;
+    transition: transform var(--bull-duration-md) var(--bull-ease-out-expo),
+                opacity var(--bull-duration-md) var(--bull-ease-out-expo);
+  }
+
+  .nav-hamburger[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-hamburger[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-hamburger[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    inset: 64px 0 0 0;
+    z-index: calc(var(--bull-z-sticky) - 1);
+    background-color: var(--bull-paper);
+    padding: var(--bull-space-8) var(--bull-space-4);
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--bull-line);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--bull-duration-lg) var(--bull-ease-out-expo),
+                opacity var(--bull-duration-lg) var(--bull-ease-out-expo);
+  }
+
+  .mobile-menu.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bull-space-4);
+  }
+
+  .mobile-link {
+    font-size: var(--bull-text-h4);
+    font-weight: var(--bull-fw-semibold);
+    color: var(--bull-ink-700);
+    padding-block: var(--bull-space-3);
+    border-bottom: 1px solid var(--bull-line);
+    transition: color var(--bull-duration-sm) var(--bull-ease-out-expo);
+  }
+
+  .mobile-link:hover {
+    color: var(--bull-ink-900);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links,
+    .nav-cta {
+      display: none;
+    }
+
+    .nav-hamburger {
+      display: flex;
+    }
+  }
+</style>

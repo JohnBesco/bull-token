@@ -1,0 +1,264 @@
+---
+const CONTRACT = 'BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const DISCORD = 'https://discord.com/invite/YUcPVrCyXx';
+const TELEGRAM = 'https://t.me/+GQuKFPLGaSI0ZDVk';
+const BIRDEYE = 'https://birdeye.so/solana/token/BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const RAYDIUM = 'https://raydium.io/swap/?inputMint=sol&outputMint=BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="/footerlogo.avif" alt="$BULL" class="footer-logo" width="80" height="40" loading="lazy" />
+        <p class="footer-tagline">We run together.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href={BIRDEYE} target="_blank" rel="noopener noreferrer">Chart</a>
+        <a href={RAYDIUM} target="_blank" rel="noopener noreferrer">Buy</a>
+        <a href={DISCORD} target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href={TELEGRAM} target="_blank" rel="noopener noreferrer">Telegram</a>
+      </nav>
+
+      <div class="footer-socials">
+        <a href={DISCORD} target="_blank" rel="noopener noreferrer" class="social-link" aria-label="$BULL Discord server">
+          <img src="/discord.avif" alt="" width="18" height="18" loading="lazy" aria-hidden="true" />
+        </a>
+        <a href={TELEGRAM} target="_blank" rel="noopener noreferrer" class="social-link" aria-label="$BULL Telegram group">
+          <img src="/telegram.avif" alt="" width="18" height="18" loading="lazy" aria-hidden="true" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© {year} $BULL. All rights reserved. Not financial advice.</p>
+
+      <div class="footer-contract">
+        <span class="footer-contract-label">Contract</span>
+        <button
+          class="footer-contract-addr"
+          data-copy={CONTRACT}
+          aria-label="Copy contract address to clipboard"
+        >
+          <code>{CONTRACT}</code>
+          <span class="copy-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <rect x="4" y="4" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M2 9.5V2.5a1 1 0 0 1 1-1H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="copy-feedback" aria-live="polite"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const copyBtn = document.querySelector('[data-copy]') as HTMLButtonElement;
+  const feedback = copyBtn?.querySelector('.copy-feedback') as HTMLElement;
+  const icon = copyBtn?.querySelector('.copy-icon') as HTMLElement;
+
+  copyBtn?.addEventListener('click', async () => {
+    const text = copyBtn.dataset.copy || '';
+    try {
+      await navigator.clipboard.writeText(text);
+      if (feedback) {
+        feedback.textContent = 'Copied!';
+        icon.style.opacity = '0';
+        setTimeout(() => {
+          feedback.textContent = '';
+          icon.style.opacity = '1';
+        }, 2000);
+      }
+    } catch {
+      // fallback for older browsers
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+  });
+</script>
+
+<style>
+  .footer {
+    background-color: var(--bull-surface);
+    border-top: 1px solid var(--bull-line);
+    padding-block: var(--bull-space-12);
+  }
+
+  .footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--bull-space-8);
+    padding-bottom: var(--bull-space-8);
+    border-bottom: 1px solid var(--bull-line);
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bull-space-2);
+  }
+
+  .footer-logo {
+    width: auto;
+    height: 36px;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .footer-tagline {
+    font-size: var(--bull-text-body-sm);
+    color: var(--bull-ink-500);
+    font-style: italic;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: var(--bull-space-8);
+    flex-wrap: wrap;
+  }
+
+  .footer-nav a {
+    font-size: var(--bull-text-body-sm);
+    color: var(--bull-ink-500);
+    text-decoration: none;
+    transition: color var(--bull-duration-sm) var(--bull-ease-out-expo);
+  }
+
+  .footer-nav a:hover {
+    color: var(--bull-ink-900);
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: var(--bull-space-4);
+    align-items: center;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--bull-radius-sm);
+    border: 1px solid var(--bull-line);
+    opacity: 0.6;
+    transition:
+      opacity var(--bull-duration-sm) var(--bull-ease-out-expo),
+      border-color var(--bull-duration-sm) var(--bull-ease-out-expo);
+  }
+
+  .social-link:hover {
+    opacity: 1;
+    border-color: var(--bull-ink-700);
+  }
+
+  .social-link img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--bull-space-6);
+    padding-top: var(--bull-space-8);
+    flex-wrap: wrap;
+  }
+
+  .footer-copyright {
+    font-size: var(--bull-text-caption);
+    color: var(--bull-ink-500);
+    line-height: 1.5;
+  }
+
+  .footer-contract {
+    display: flex;
+    align-items: center;
+    gap: var(--bull-space-3);
+    flex-wrap: wrap;
+  }
+
+  .footer-contract-label {
+    font-size: var(--bull-text-caption);
+    color: var(--bull-ink-500);
+    font-weight: var(--bull-fw-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+
+  .footer-contract-addr {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--bull-space-2);
+    background: none;
+    border: 1px solid var(--bull-line);
+    border-radius: var(--bull-radius-xs);
+    padding: 6px 10px;
+    cursor: pointer;
+    transition:
+      border-color var(--bull-duration-sm) var(--bull-ease-out-expo),
+      background-color var(--bull-duration-sm) var(--bull-ease-out-expo);
+    max-width: 340px;
+  }
+
+  .footer-contract-addr:hover {
+    border-color: var(--bull-ink-700);
+    background-color: var(--bull-paper);
+  }
+
+  .footer-contract-addr code {
+    font-family: var(--bull-font-mono);
+    font-size: 11px;
+    color: var(--bull-ink-700);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .copy-icon {
+    color: var(--bull-ink-500);
+    flex-shrink: 0;
+    display: flex;
+    transition: opacity var(--bull-duration-sm) var(--bull-ease-out-expo);
+  }
+
+  .copy-feedback {
+    font-size: 11px;
+    font-family: var(--bull-font-body);
+    color: var(--bull-brand-600);
+    flex-shrink: 0;
+    min-width: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-main {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--bull-space-6);
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+    }
+
+    .footer-contract-addr {
+      max-width: 100%;
+    }
+  }
+</style>

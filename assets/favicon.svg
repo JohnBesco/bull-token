@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+     role="img" aria-label="BULL favicon">
+  <title>BULL</title>
+  <!-- Simplified bull horns + head silhouette at 32×32 -->
+  <circle cx="16" cy="16" r="16" fill="#B8F07A"/>
+  <!-- Simplified bull mark: circle + bold B initial at tiny sizes -->
+  <text x="16" y="22"
+        font-family="'Bebas Neue', ui-sans-serif, system-ui, sans-serif"
+        font-weight="400"
+        font-size="20"
+        letter-spacing="0"
+        text-anchor="middle"
+        fill="#0A0C07">B</text>
+</svg>

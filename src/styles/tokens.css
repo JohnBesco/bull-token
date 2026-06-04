@@ -1,0 +1,160 @@
+/* ─────────────────────────────────────────────
+   BULL Design System — CSS Custom Properties
+   Prefix: --bull-
+   Dark-canvas first.
+───────────────────────────────────────────── */
+
+:root {
+
+  /* ── Brand (Warm Lime-Green Pastel, HSL 88°) ── */
+  --bull-brand-50:  #FAFEF5;
+  --bull-brand-100: #F3FBEA;
+  --bull-brand-200: #EBF8D4;
+  --bull-brand-300: #DCF2BF;
+  --bull-brand-400: #CFEDA9;
+  --bull-brand-500: #C3E898;
+  --bull-brand-600: #B8F07A; /* primary accent */
+  --bull-brand-600-rgb: 184, 240, 122; /* for rgba() usage */
+  --bull-brand-700: #89D44A;
+  --bull-brand-800: #6AB83A;
+  --bull-brand-900: #4A8424;
+
+  /* ── Ink (light text on dark canvas) ── */
+  --bull-ink-100: #1A2612;
+  --bull-ink-200: #27351B;
+  --bull-ink-300: #3D4F2E;
+  --bull-ink-500: #70885A;
+  --bull-ink-700: #B0C49A;
+  --bull-ink-900: #EDF5E0; /* primary text */
+  --bull-ink-900-rgb: 237, 245, 224; /* for rgba() usage */
+
+  /* ── Canvas ── */
+  --bull-paper:     #0A0C07; /* canvas — all pages */
+  --bull-paper-rgb: 10, 12, 7; /* for rgba() usage */
+  --bull-surface: #131508; /* card / input background */
+  --bull-line:    #1E2410; /* borders, dividers */
+
+  /* ── Semantic ── */
+  --bull-success-100: #EBF8D4;
+  --bull-success-600: #B8F07A;
+  --bull-warning-100: #FEF3C7;
+  --bull-warning-600: #F59E0B;
+  --bull-danger-100:  #FEE2E2;
+  --bull-danger-600:  #EF4444;
+  --bull-info-100:    #DBEAFE;
+  --bull-info-600:    #3B82F6;
+
+  /* ── Typography ── */
+  --bull-font-display: 'Bebas Neue', ui-sans-serif, system-ui, sans-serif;
+  --bull-font-body:    'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --bull-font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  --bull-fw-regular:  400;
+  --bull-fw-medium:   500;
+  --bull-fw-semibold: 600;
+  --bull-fw-bold:     700;
+
+  /* ── Type scale ── */
+  --bull-text-display-xl: clamp(56px, 8vw, 96px);
+  --bull-text-display-lg: clamp(48px, 6vw, 72px);
+  --bull-text-display-md: clamp(36px, 5vw, 56px);
+  --bull-text-display-sm: clamp(28px, 4vw, 40px);
+  --bull-text-h1:         clamp(36px, 5vw, 56px);
+  --bull-text-h2:         clamp(28px, 4vw, 40px);
+  --bull-text-h3:         clamp(22px, 3vw, 28px);
+  --bull-text-h4:         22px;
+  --bull-text-body-lg:    18px;
+  --bull-text-body-md:    16px;
+  --bull-text-body-sm:    14px;
+  --bull-text-overline:   12px;
+  --bull-text-caption:    12px;
+  --bull-text-code:       14px;
+
+  /* ── Spacing ── */
+  --bull-space-1:  4px;
+  --bull-space-2:  8px;
+  --bull-space-3:  12px;
+  --bull-space-4:  16px;
+  --bull-space-5:  20px;
+  --bull-space-6:  24px;
+  --bull-space-8:  32px;
+  --bull-space-10: 40px;
+  --bull-space-12: 48px;
+  --bull-space-16: 64px;
+  --bull-space-20: 80px;
+  --bull-space-24: 96px;
+  --bull-space-32: 128px;
+  --bull-space-40: 160px;
+
+  /* ── Radius ── */
+  --bull-radius-none: 0px;
+  --bull-radius-xs:   4px;
+  --bull-radius-sm:   8px;
+  --bull-radius-md:   12px;
+  --bull-radius-lg:   16px;
+  --bull-radius-xl:   24px;
+  --bull-radius-full: 9999px;
+
+  /* ── Shadow ── */
+  --bull-shadow-none: none;
+  --bull-shadow-xs:   0 1px 2px rgba(10,12,7,0.8);
+  --bull-shadow-sm:   0 2px 8px rgba(10,12,7,0.7), 0 1px 2px rgba(10,12,7,0.9);
+  --bull-shadow-md:   0 4px 16px rgba(10,12,7,0.8), 0 2px 4px rgba(10,12,7,0.9);
+  --bull-shadow-lg:   0 8px 32px rgba(10,12,7,0.9), 0 4px 8px rgba(10,12,7,0.9);
+  --bull-shadow-xl:   0 16px 48px rgba(10,12,7,0.95), 0 8px 16px rgba(10,12,7,0.9);
+
+  /* ── Motion ── */
+  --bull-duration-xs:  80ms;
+  --bull-duration-sm:  160ms;
+  --bull-duration-md:  240ms;
+  --bull-duration-lg:  300ms;
+  --bull-duration-xl:  480ms;
+  --bull-duration-2xl: 720ms;
+
+  --bull-ease-out-expo: cubic-bezier(0.16,1,0.3,1);
+  --bull-ease-in-out:   cubic-bezier(0.4,0,0.2,1);
+  --bull-ease-linear:   linear;
+  --bull-ease-spring:   cubic-bezier(0.34,1.56,0.64,1);
+
+  /* ── Layout ── */
+  --bull-container-max:     1200px;
+  --bull-container-reading: 680px;
+
+  /* ── Z-index ── */
+  --bull-z-sticky:  40;
+  --bull-z-dropdown: 50;
+  --bull-z-modal:   60;
+  --bull-z-toast:   70;
+  --bull-z-tooltip: 80;
+}
+
+/* ── Reduced motion reset ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Ticker tape animation ── */
+@keyframes bull-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Scroll reveal ── */
+@keyframes bull-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Hero glow ── */
+.bull-hero-glow {
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 50%,
+    rgba(var(--bull-brand-600-rgb), 0.13) 0%,
+    transparent 70%
+  );
+}

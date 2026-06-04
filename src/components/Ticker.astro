@@ -1,0 +1,49 @@
+---
+const ITEMS = [
+  '$BULL',
+  'SOLANA',
+  'WE RUN TOGETHER',
+  '2,140 HOLDERS',
+  '9.06B SUPPLY',
+  'STILL EARLY',
+  'COMMUNITY BEFORE EVERYTHING',
+  'BUILT TO LAST',
+];
+
+const separator = '·';
+const line = ITEMS.map(item => `${item} ${separator} `).join('');
+---
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">{line}</span>
+    <span class="ticker-item" aria-hidden="true">{line}</span>
+  </div>
+</div>
+
+<style>
+  .ticker {
+    background-color: var(--bull-surface);
+    border-top: 1px solid var(--bull-line);
+    border-bottom: 1px solid var(--bull-line);
+    overflow: hidden;
+    padding-block: 14px;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    animation: bull-marquee 32s linear infinite;
+    will-change: transform;
+  }
+
+  .ticker-item {
+    font-family: var(--bull-font-display);
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: var(--bull-brand-600);
+    flex-shrink: 0;
+  }
+</style>

@@ -1,0 +1,26 @@
+# Build outputs
+node_modules/
+dist/
+.astro/
+
+# macOS
+.DS_Store
+
+# Claude Code (private LLM settings)
+.claude/
+
+# Firecrawl research (internal)
+.firecrawl/
+
+# Competitor reference snapshots (internal)
+brands/
+
+# Internal strategy + research docs
+research/
+
+# Internal LLM context files
+PRODUCT.md
+CLAUDE.md
+
+# Design system docs (internal tooling, not needed for Netlify build)
+design-system/

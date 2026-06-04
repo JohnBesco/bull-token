@@ -1,0 +1,153 @@
+---
+const DISCORD = 'https://discord.com/invite/YUcPVrCyXx';
+const TELEGRAM = 'https://t.me/+GQuKFPLGaSI0ZDVk';
+---
+
+<section class="community" id="community" aria-label="Community">
+  <div class="container community-inner">
+    <div class="community-text" data-reveal>
+      <h2 class="community-headline">RUN WITH US.</h2>
+      <p class="community-sub">
+        Two channels. 2,140 holders deep. The real conversation happens here.
+      </p>
+    </div>
+
+    <div class="community-ctas" data-reveal style="--reveal-delay: 100ms">
+      <a
+        href={DISCORD}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="community-btn community-btn-discord"
+        aria-label="Join $BULL Discord server"
+      >
+        <img src="/discord.avif" alt="" width="20" height="20" class="community-icon" aria-hidden="true" />
+        Join Discord
+      </a>
+      <a
+        href={TELEGRAM}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="community-btn community-btn-telegram"
+        aria-label="Join $BULL Telegram group"
+      >
+        <img src="/telegram.avif" alt="" width="20" height="20" class="community-icon" aria-hidden="true" />
+        Join Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .community {
+    padding-block: var(--bull-space-24);
+    background-color: var(--bull-paper);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community::before {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60%;
+    background: radial-gradient(
+      ellipse 80% 60% at 50% 100%,
+      rgba(var(--bull-brand-600-rgb), 0.06) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+
+  .community-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--bull-space-10);
+    position: relative;
+    z-index: 1;
+  }
+
+  .community-headline {
+    font-family: var(--bull-font-display);
+    font-size: var(--bull-text-display-md);
+    color: var(--bull-ink-900);
+    line-height: 0.95;
+    margin-bottom: var(--bull-space-4);
+    text-wrap: balance;
+  }
+
+  .community-sub {
+    font-size: var(--bull-text-body-lg);
+    color: var(--bull-ink-700);
+    max-width: 420px;
+    line-height: 1.6;
+  }
+
+  .community-ctas {
+    display: flex;
+    gap: var(--bull-space-4);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .community-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--bull-space-2);
+    padding: 16px 32px;
+    font-family: var(--bull-font-body);
+    font-size: var(--bull-text-body-md);
+    font-weight: var(--bull-fw-semibold);
+    border-radius: var(--bull-radius-sm);
+    text-decoration: none;
+    transition:
+      transform var(--bull-duration-sm) var(--bull-ease-out-expo),
+      opacity var(--bull-duration-sm) var(--bull-ease-out-expo);
+    min-width: 180px;
+    justify-content: center;
+  }
+
+  .community-btn:active {
+    transform: scale(0.97);
+  }
+
+  .community-btn-discord {
+    background-color: #5865F2;
+    color: #fff;
+  }
+
+  .community-btn-discord:hover {
+    opacity: 0.9;
+  }
+
+  .community-btn-telegram {
+    background-color: #0088cc;
+    color: #fff;
+  }
+
+  .community-btn-telegram:hover {
+    opacity: 0.9;
+  }
+
+  .community-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    .community-ctas {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .community-btn {
+      width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,173 @@
+---
+const RAYDIUM = 'https://raydium.io/swap/?inputMint=sol&outputMint=BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+const BIRDEYE = 'https://birdeye.so/solana/token/BULLa6g9e5UCuTXC5Z3Cf7s7CgvJhnJfY71DwipSmF8w';
+---
+
+<section class="hero" aria-label="Hero">
+  <div class="container hero-inner">
+    <div class="hero-copy" data-reveal>
+      <p class="hero-eyebrow">Solana community token</p>
+      <h1 class="hero-headline">STILL<br />EARLY.</h1>
+      <p class="hero-sub">
+        2,140 holders and counting. $BULL is built for the people who stay past the hype cycle.
+      </p>
+      <div class="hero-ctas">
+        <a href={RAYDIUM} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+          Buy $BULL
+        </a>
+        <a href={BIRDEYE} target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+          View chart
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-reveal style="--reveal-delay: 120ms">
+      <div class="hero-glow-wrap bull-hero-glow">
+        <picture>
+          <source media="(max-width: 640px)" srcset="/smallheroimg.avif" type="image/avif" />
+          <img
+            src="/heroimg.avif"
+            alt="$BULL community token mark"
+            class="hero-bull-mark"
+            width="560"
+            height="560"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding-top: clamp(var(--bull-space-16), 8vh, var(--bull-space-32));
+    padding-bottom: clamp(var(--bull-space-16), 8vh, var(--bull-space-24));
+    min-height: calc(90svh - 64px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--bull-space-16);
+  }
+
+  .hero-eyebrow {
+    font-size: var(--bull-text-overline);
+    font-weight: var(--bull-fw-semibold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bull-brand-600);
+    margin-bottom: var(--bull-space-4);
+  }
+
+  .hero-headline {
+    font-family: var(--bull-font-display);
+    font-size: var(--bull-text-display-lg);
+    line-height: 0.95;
+    color: var(--bull-ink-900);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin-bottom: var(--bull-space-6);
+  }
+
+  .hero-sub {
+    font-size: var(--bull-text-body-lg);
+    color: var(--bull-ink-700);
+    line-height: 1.65;
+    max-width: 480px;
+    text-wrap: pretty;
+    margin-bottom: var(--bull-space-10);
+  }
+
+  .hero-ctas {
+    display: flex;
+    align-items: center;
+    gap: var(--bull-space-4);
+    flex-wrap: wrap;
+  }
+
+  .hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero-glow-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  /* picture must be contents so img is a direct flex child of glow-wrap,
+     letting percentage height resolve against the glow-wrap's definite size */
+  .hero-glow-wrap picture {
+    display: contents;
+  }
+
+  .hero-bull-mark {
+    width: 88%;
+    height: 88%;
+    object-fit: contain;
+    object-position: center 30%;
+    position: relative;
+    z-index: 1;
+    filter: invert(1) drop-shadow(0 0 40px rgba(var(--bull-brand-600-rgb), 0.15));
+    will-change: filter;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      min-height: auto;
+      padding-block: var(--bull-space-16);
+    }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .hero-copy {
+      order: 2;
+    }
+
+    .hero-visual {
+      order: 1;
+    }
+
+    .hero-sub {
+      max-width: 100%;
+    }
+
+    .hero-ctas {
+      justify-content: center;
+    }
+
+    .hero-glow-wrap {
+      max-width: 280px;
+      margin-inline: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-ctas {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .hero-ctas .btn {
+      justify-content: center;
+    }
+  }
+</style>
